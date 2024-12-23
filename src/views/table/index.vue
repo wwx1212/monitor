@@ -206,7 +206,7 @@ export default {
         }
     }
   }
-
+//
   .header-sort {
     display: flex;
     align-items: center;
