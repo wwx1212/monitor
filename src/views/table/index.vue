@@ -18,7 +18,7 @@
         <template #default="{ row }">
           <div style="display: flex;align-items: center;justify-content: space-between;">
             <div style="display: flex;align-items: center;">
-              <img v-if="row.log" :src="row.log" alt="" style="width: 16px;height: 16px;margin-right: 6px;" />
+              <img v-if="row.image" :src="row.image" alt="" style="width: 16px;height: 16px;margin-right: 6px;" />
               <span>{{ row.coinName }}</span>
             </div>
             <div class="coinName-tag">buy</div>
