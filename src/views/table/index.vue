@@ -8,9 +8,9 @@
             <div class="mask"></div>
             <div class="text">
               <div class="text-1">{{ item.coinName }}</div>
-              <div class="text-2" :style="{ color: item.percentStatus == 0 ? 'red' : '#00ada2' }">
+              <div class="text-2" :style="{ color: item.percentStatus == 1 ? 'red' : '#00ada2' }">
                 <span v-if="item.percentStatus == 1" style="color: red">-</span>
-                <span v-else style="color: #00ada2">+</span>
+                <span v-else style="color: #00ada2;">+</span>
                 {{ item.percent }}
               </div>
               <div class="text-3">{{ item.price }}</div>
@@ -25,8 +25,8 @@
             <div class="mask"></div>
             <div class="text">
               <div class="text-1">{{ item.coinName }}</div>
-              <div class="text-2" :style="{ color: item.percentStatus == 0 ? '#19888A' : '#00ada2' }">
-                <span v-if="item.percentStatus == 1" style="color: #19888A">-</span>
+              <div class="text-2" :style="{ color: item.percentStatus == 1 ? 'red' : '#00ada2' }">
+                <span v-if="item.percentStatus == 1" style="color: red">-</span>
                 <span v-else style="color: #00ada2">+</span>
                 {{ item.percent }}
               </div>
@@ -116,11 +116,11 @@ export default {
       dataHot().then(res => {
         if (res.success) {
           const data = res.data
-          this.list1 = [{}, {}, {}]
+          this.list1 = data
           this.$nextTick(() => {
             const cards1 = document.querySelectorAll('.card-main1')
-            cards1.forEach(item => {
-              item.style.background = `url(${data[0].log}) center/cover no-repeat`
+            cards1.forEach((item, i) => {
+              item.style.background = `url(${this.list1[i].log}) center/cover no-repeat`
             })
           })
         }
@@ -128,11 +128,11 @@ export default {
       dataTop().then(res => {
         if (res.success) {
           const data = res.data
-          this.list2 = [{}, {}, {}]
+          this.list2 = data
           this.$nextTick(() => {
             const cards2 = document.querySelectorAll('.card-main2')
-            cards2.forEach(item => {
-              item.style.background = `url(${data[0].log}) center/cover no-repeat`
+            cards2.forEach((item, i) => {
+              item.style.background = `url(${this.list2[i].log}) center/cover no-repeat`
             })
           })
         }
