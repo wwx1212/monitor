@@ -1,0 +1,202 @@
+export default {
+  route: {
+    dashboard: 'الصفحة الرئيسية',
+    introduction: 'موجز',
+    documentation: 'الوثائق',
+    guide: 'صفحة التمهيد',
+    operatingManual: 'دليل التشغيل',
+    permission: 'إذن اختبار الصفحة',
+    rolePermission: 'دور السلطة',
+    pagePermission: 'إذن الصفحة',
+    directivePermission: 'تعليمات السلطة',
+    icons: 'أيقونات',
+    components: 'مكون',
+    componentIndex: 'مقدمة',
+    tinymce: 'محرر النص الغني',
+    markdown: 'مارك داون',
+    jsonEditor: 'جسون المحرر',
+    dndList: 'قائمة السحب',
+    splitPane: 'سبليت بان',
+    avatarUpload: 'تحميل الصور',
+    dropzone: 'دروزون',
+    sticky: 'ستيكي',
+    countTo: 'كونت تو',
+    componentMixin: 'مكونات صغيرة',
+    backToTop: 'العودة إلى أعلى',
+    dragDialog: '拖拽 Dialog',
+    dragSelect: '拖拽 Select',
+    dragKanban: 'سحب بطاقات',
+    charts: 'رسم بياني',
+    keyboardChart: 'لوحة المفاتيح الرسم البياني',
+    lineChart: 'خط الرسم البياني',
+    mixChart: 'الرسم البياني الهجين',
+    example: 'مثال شامل',
+    nested: 'التوجيه التعشيش',
+    menu1: 'القائمة',
+    'menu1-1': '菜单 1-1',
+    'menu1-2': '菜单 1-2',
+    'menu1-2-1': '菜单 1-2-1',
+    'menu1-2-2': '菜单 1-2-2',
+    'menu1-3': '菜单 1-3',
+    menu2: '菜单 2',
+    Table: 'تابل',
+    dynamicTable: '动态Table',
+    dragTable: '拖拽Table',
+    inlineEditTable: 'Table内编辑',
+    complexTable: '综合Table',
+    treeTable: 'شجرة الجدول',
+    customTreeTable: '自定义树表',
+    tab: 'تبويب',
+    form: 'شكل .',
+    createArticle: 'خلق المادة',
+    editArticle: 'تحرير المادة',
+    articleList: 'قائمة المواد',
+    errorPages: 'صفحة الخطأ',
+    page401: '401',
+    page404: '404',
+    errorLog: 'سجل خطأ',
+    excel: 'Excel',
+    exportExcel: 'تصدير إكسل',
+    selectExcel: '导出 已选择项',
+    mergeHeader: '导出 多级表头',
+    uploadExcel: 'تحميل اكسل',
+    zip: 'Zip',
+    pdf: 'PDF',
+    exportZip: 'Export Zip',
+    theme: 'تغيير الجلد',
+    clipboardDemo: 'Clipboard',
+    i18n: 'تدويل',
+    externalLink: 'سلسلة الخارجي',
+    profile: 'مركز شخصي'
+  },
+  navbar: {
+    dashboard: 'الصفحة الرئيسية',
+    github: 'عنوان المشروع',
+    logOut: 'خروج الدخول',
+    profile: 'مركز شخصي',
+    theme: 'تغيير الجلد',
+    size: 'حجم التصميم'
+  },
+  login: {
+    title: 'نظام تسجيل الدخول',
+    logIn: 'سجل',
+    identify: 'رمز التحقق',
+    username: 'رقم الحساب',
+    password: 'كلمة السر',
+    any: 'ملء',
+    thirdparty: 'طرف ثالث تسجيل الدخول',
+    thirdpartyTips: 'لا يمكن محاكاة المحلية ، يرجى الجمع بين الأعمال التجارية الخاصة بك محاكاة !'
+  },
+  documentation: {
+    documentation: 'الوثائق',
+    github: 'العنوان الزمالك'
+  },
+  permission: {
+    addRole: 'إضافة دور',
+    editPermission: 'تحرير السلطة',
+    roles: 'أذونات',
+    switchRoles: 'إذن التبديل',
+    tips: '在某些情况下，不适合使用 v-permission。例如：Element-UI 的 el-tab 或 el-table-column 以及其它动态渲染 dom 的场景。你只能通过手动设置 v-if 来实现。',
+    delete: 'حذف .',
+    import: 'استيرادها',
+    export: 'تصدير',
+    confirm: 'أكّد',
+    cancel: 'ألغى'
+  },
+  guide: {
+    description: '引导页对于一些第一次进入项目的人很有用，你可以简单介绍下项目的功能。本 Demo 是基于',
+    button: 'فتح الحذاء'
+  },
+  components: {
+    documentation: 'الوثائق',
+    tinymceTips: '富文本是管理后台一个核心的功能，但同时又是一个有很多坑的地方。在选择富文本的过程中我也走了不少的弯路，市面上常见的富文本都基本用过了，最终权衡了一下选择了Tinymce。更详细的富文本比较和介绍见',
+    dropzoneTips: '由于我司业务有特殊需求，而且要传七牛 所以没用第三方，选择了自己封装。代码非常的简单，具体代码你可以在这里看到 @/components/Dropzone',
+    stickyTips: 'عند التمرير إلى موقع محدد مسبقا ، سيتم امتصاصه في أعلى الصفحة',
+    backToTopTips1: 'الصفحة التمرير إلى الموقع المحدد سوف تظهر في الزاوية اليمنى السفلى من زر العودة إلى أعلى',
+    backToTopTips2: '可自定义按钮的样式、show/hide、出现的高度、返回的位置 如需文字提示，可在外部使用Element的el-tooltip元素',
+    imageUploadTips: '由于我在使用时它只有vue@1版本，而且和mockjs不兼容，所以自己改造了一下，如果大家要使用的话，优先还是使用官方版本。'
+  },
+  table: {
+    dynamicTips1: 'رأس ثابت ، مرتبة حسب رأس النظام',
+    dynamicTips2: 'لا رأس ثابت ، انقر فوق نوع',
+    dragTips1: 'النظام الافتراضي',
+    dragTips2: 'بعد سحب النظام',
+    title: 'عنوان',
+    importance: 'أهمية',
+    type: 'نوع .',
+    remark: 'تعليقات',
+    search: 'بحث .',
+    resetting: 'إعادة',
+    add: 'إضافة .',
+    export: 'تصدير',
+    import: 'استيرادها',
+    template: 'قالب .',
+    reviewer: 'مدقق الحسابات',
+    id: 'الرقم المتسلسل',
+    date: 'الوقت .',
+    author: 'مؤلف',
+    readings: 'قراءة عدد',
+    status: 'مركز',
+    actions: 'العمليات',
+    edit: 'تحرير .',
+    publish: 'صدر',
+    draft: 'مسودة',
+    delete: 'حذف .',
+    cancel: 'ألغى',
+    confirm: 'أكّد',
+    verifyDrivingLicense: 'التحقق من رخصة القيادة',
+    check: 'عرض .',
+    sysAnnualInspection: 'نظام التفتيش السنوي',
+    ManualAnnualInspection: 'دليل التفتيش السنوي',
+    downloadSeal: 'downloadSeal',
+    downloadCode: 'downloadCode'
+  },
+  tab: {
+    allVehicles: 'جميع المركبات'
+  },
+  example: {
+    warning: '创建和编辑页面是不能被 keep-alive 缓存的，因为keep-alive 的 include 目前不支持根据路由来缓存，所以目前都是基于 component name 来进行缓存的。如果你想类似的实现缓存效果，可以使用 localStorage 等浏览器缓存方案。或者不要使用 keep-alive 的 include，直接缓存所有页面。详情见'
+  },
+  errorLog: {
+    tips: '请点击右上角bug小图标',
+    description: '现在的管理后台基本都是spa的形式了，它增强了用户体验，但同时也会增加页面出问题的可能性，可能一个小小的疏忽就导致整个页面的死锁。好在 Vue 官网提供了一个方法来捕获处理异常，你可以在其中进行错误处理或者异常上报。',
+    documentation: '文档介绍'
+  },
+  excel: {
+    export: 'تصدير',
+    selectedExport: 'تصدير اختيار',
+    placeholder: '请输入文件名(默认excel-list)'
+  },
+  zip: {
+    export: 'تصدير',
+    placeholder: '请输入文件名(默认file)'
+  },
+  pdf: {
+    tips: '这里使用   window.print() 来实现下载pdf的功能'
+  },
+  theme: {
+    change: 'تغيير الجلد',
+    documentation: 'تجديد الوثيقة',
+    tips: 'Tips: 它区别于 navbar 上的 theme-pick, 是两种不同的换肤方法，各自有不同的应用场景，具体请参考文档。'
+  },
+  tagsView: {
+    refresh: 'منعش',
+    close: 'غلق',
+    closeOthers: 'إغلاق أخرى',
+    closeAll: 'إغلاق جميع'
+  },
+  settings: {
+    title: 'تصميم نظام التكوين',
+    theme: 'موضوع اللون',
+    topMenu: 'فتح قائمة أعلى',
+    tagsView: '开启 Tags-View',
+    fixedHeader: '固定 Header',
+    sidebarLogo: '侧边栏 Logo'
+  },
+  language: {
+    chinese: 'الصينية .',
+    japan: 'اليابانية .',
+    english: 'إنجليزي',
+    arabic: 'بالعربية'
+  }
+}
