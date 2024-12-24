@@ -37,47 +37,49 @@
       </div>
 
     </div>
-    <el-table :data="tableData" style="width: 100%" size="medium">
-      <el-table-column prop="coinName" width="50px">
-        <template #default>
-          <i class="el-icon-star-off"></i>
-        </template>
-      </el-table-column>
-      <el-table-column type="index" width="50px">
-        <template #header>
-          <div class="header-sort">
-            <img class="el-icon-caret-top" src="../../assets/img/xiangshangjiantou.png" />
-            <span style="font-weight: bold; font-size: 14px; color: #333">#</span>
-          </div>
-        </template>
-      </el-table-column>
-      <el-table-column label="coin" min-width="200">
-        <template #default="{ row }">
-          <div style="display: flex;align-items: center;justify-content: space-between;">
-            <div style="display: flex;align-items: center;">
-              <img v-if="row.image" :src="row.image" alt="" style="width: 16px;height: 16px;margin-right: 6px;" />
-              <span>{{ row.coinName }}</span>
+    <div style="border-radius: 12px;overflow: hidden;">
+      <el-table :data="tableData" style="width: 100%" size="medium">
+        <el-table-column prop="coinName" width="50px">
+          <template #default>
+            <i class="el-icon-star-off"></i>
+          </template>
+        </el-table-column>
+        <el-table-column type="index" width="50px">
+          <template #header>
+            <div class="header-sort">
+              <img class="el-icon-caret-top" src="../../assets/img/xiangshangjiantou.png" />
+              <span style="font-weight: bold; font-size: 14px; color: #333">#</span>
             </div>
-            <!--            <div class="coinName-tag">buy</div>-->
-          </div>
-        </template>
-      </el-table-column>
-      <el-table-column prop="price" label="price" min-width="180" />
-      <!--    <el-table-column prop="oneHour" label="1h" width="180"/>-->
-      <!--          <el-table-column prop="tradingVolume" label="24h" width="180"/>-->
-      <el-table-column label="7d" min-width="180">
-        <template #default="{ row }">
-          <div style="display: flex;align-items: center">
-            <img v-if="row.percentStatus == 0" style="width: 11px;margin-right: 4px" src="../../assets/img/xiangxia.png" alt="" />
-            <img v-if="row.percentStatus == 1" style="width: 11px;margin-right: 4px" src="../../assets/img/xiangshang.png" alt="" />
-            <span :style="{ color: row.percentStatus == 0 ? 'red' : '#00ada2' }">{{ row.percent }}</span>
-          </div>
-        </template>
-      </el-table-column>
-      <el-table-column prop="tradingVolume" label="24h Volume" min-width="180" />
-      <el-table-column prop="prePriceTwo" label="Market Cap" min-width="180" />
-      <!--      <el-table-column prop="percent" label="Last 7 Days" min-width="180"/>-->
-    </el-table>
+          </template>
+        </el-table-column>
+        <el-table-column label="coin" min-width="200">
+          <template #default="{ row }">
+            <div style="display: flex;align-items: center;justify-content: space-between;">
+              <div style="display: flex;align-items: center;">
+                <img v-if="row.image" :src="row.image" alt="" style="width: 16px;height: 16px;margin-right: 6px;" />
+                <span>{{ row.coinName }}</span>
+              </div>
+              <!--            <div class="coinName-tag">buy</div>-->
+            </div>
+          </template>
+        </el-table-column>
+        <el-table-column prop="price" label="price" min-width="180" />
+        <!--    <el-table-column prop="oneHour" label="1h" width="180"/>-->
+        <!--          <el-table-column prop="tradingVolume" label="24h" width="180"/>-->
+        <el-table-column label="7d" min-width="180">
+          <template #default="{ row }">
+            <div style="display: flex;align-items: center">
+              <img v-if="row.percentStatus == 0" style="width: 11px;margin-right: 4px" src="../../assets/img/xiangxia.png" alt="" />
+              <img v-if="row.percentStatus == 1" style="width: 11px;margin-right: 4px" src="../../assets/img/xiangshang.png" alt="" />
+              <span :style="{ color: row.percentStatus == 0 ? 'red' : '#00ada2' }">{{ row.percent }}</span>
+            </div>
+          </template>
+        </el-table-column>
+        <el-table-column prop="tradingVolume" label="24h Volume" min-width="180" />
+        <el-table-column prop="prePriceTwo" label="Market Cap" min-width="180" />
+        <!--      <el-table-column prop="percent" label="Last 7 Days" min-width="180"/>-->
+      </el-table>
+    </div>
   </div>
 
 </template>
