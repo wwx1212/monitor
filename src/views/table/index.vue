@@ -192,18 +192,18 @@ export default {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影 */
       }
         .text {
-          padding: 20px;
+          padding: 16px;
           box-sizing: border-box;
           position: absolute;
           z-index: 2;
           color: rgb(255, 255, 255);
           .text-1 {
-            font-size: 18px;
+            font-size: 19px;
+            height: 42px;
           }
           .text-2 {
             font-weight: bold;
             font-size: 21px;
-            margin-top: 16px;
           }
           .text-3 {
             font-size: 13px;
