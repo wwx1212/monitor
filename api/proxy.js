@@ -10,7 +10,7 @@ module.exports = (req, res) => {
   // 这里使用 backend 主要用于区分 vercel serverless 的 api 路径
   // xxxxx 替换为你跨域请求的服务器 如： http://baidu.com
   if (req.url.startsWith('/backend')) {
-    target = 'https://d887537.r33.cpolar.top'
+    target = 'http://517385cb.r33.cpolar.top'
   }
   // 创建代理对象并转发请求
   createProxyMiddleware({
