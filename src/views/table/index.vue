@@ -195,6 +195,7 @@ export default {
             font-size: 18px;
           }
           .text-2 {
+            font-weight: bold;
             font-size: 21px;
             margin-top: 16px;
           }
