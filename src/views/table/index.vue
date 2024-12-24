@@ -120,7 +120,9 @@ export default {
           this.$nextTick(() => {
             const cards1 = document.querySelectorAll('.card-main1')
             cards1.forEach((item, i) => {
+              // item.style.background = `url(${this.list1[i].log}) no-repeat center`
               item.style.background = `url(${this.list1[i].log}) center/cover no-repeat`
+              // item.style.backgroundSize = '60%'
             })
           })
         }
@@ -132,7 +134,10 @@ export default {
           this.$nextTick(() => {
             const cards2 = document.querySelectorAll('.card-main2')
             cards2.forEach((item, i) => {
+              // item.style.background = `url(${this.list2[i].log}) no-repeat center`
+              // item.style.backgroundSize = '60%'
               item.style.background = `url(${this.list2[i].log}) center/cover no-repeat`
+              // item.style.backgroundSize = '60%'
             })
           })
         }
@@ -162,7 +167,7 @@ export default {
     }
 
     .card-main2 {
-      //background: url('https://assets.coingecko.com/coins/images/50993/standard/Screenshot_2024-10-22_at_2.46.54%E2%80%AFAM.png?1729672855') center/cover no-repeat;
+      //background: url('https://assets.coingecko.com/coins/images/50993/standard/Screenshot_2024-10-22_at_2.46.54%E2%80%AFAM.png?1729672855') no-repeat center;
       overflow: hidden;
       margin-top: 12px;
     }
@@ -174,14 +179,15 @@ export default {
       border-radius: 12px;
       border: 1px solid #b2b1b1;
       margin-right: 12px;
+      background-size: 90%;
       .mask {
         position: absolute;
         z-index: 1;
-        flex: 1;
+        width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(0, 0, 0, 0.5);
         border: 1rpx solid rgba(189, 189, 189, 0.9);
-        backdrop-filter: blur(3px); /* 毛玻璃模糊程度 */
+        backdrop-filter: blur(4px); /* 毛玻璃模糊程度 */
         -webkit-backdrop-filter: blur(10px); /* 兼容 Safari */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影 */
       }
