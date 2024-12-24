@@ -19,7 +19,7 @@ module.exports = {
     disableHostCheck: true,
     proxy: {
       '/web': {
-        target: 'http://d887537.r33.cpolar.top/',
+        target: 'http://517385cb.r33.cpolar.top/',
         changeOrigin: true,
         pathRewrite: {
           '^/web': ''
